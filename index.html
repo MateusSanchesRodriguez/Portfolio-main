@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" href="Arquivos/pepe-hack-hack.gif" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="Css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@5/dark.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"
+      defer
+    ></script>
+    <script src="./Js/html2canvas.min.js" defer></script>
+    <script src="./Js/disintegrate.js" defer></script>
+    <script src="./Js/dontOpen.js" defer></script>
+    <script src="./Js/maquina_escrever.js" defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/Flip.min.js"
+      defer
+    ></script>
+    <script src="./Js/index.js" defer></script>
+
+    <title>Portfolio | Mateus Sanches</title>
+  </head>
+
+  <body>
+    <!-- menu -->
+    <div class="mainContainer">
+      <div
+        class="mainContent"
+        id="home"
+        data-dis-type="simultaneous"
+        data-dis-reduction-factor="300"
+      >
+        <nav
+          class="navbar navbar-expand-lg text-uppercase fixed-top"
+          id="mainNav"
+        >
+          <div class="container-fluid justify-content-end">
+            <button
+              class="navbar-toggler text-uppercase font-weight-bold text-white rounded "
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarResponsive"
+              aria-controls="navbarResponsive"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              Menu
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item mx-0 mx-lg-1">
+                  <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#home"
+                    >HOME</a
+                  >
+                </li>
+                <li class="nav-item mx-0 mx-lg-1">
+                  <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#projects"
+                    >PROJETOS</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- menu -->
+
+        <!-- sobre mim -->
+        <section class="start">
+          <div class="presentation">
+            <p class="descricao">
+              Oi, eu sou <br />
+              <span style="display: inline" class="myName">Mateus Sanches</span>
+              <br />
+
+              Desenvolvedor Back-End
+            </p>
+            <div class="redesSociais">
+              <div class="linkedin">
+                <a
+                  href="https://www.linkedin.com/in/mateus-rodriguez/"
+                  target="_blank"
+                >
+                  <img src="Arquivos/linkedin.png" alt="linkedin-logo" />
+                </a>
+              </div>
+              <div class="github">
+                <a
+                  href="https://github.com/MateusSanchesRodriguez"
+                  target="_blank"
+                >
+                  <img src="Arquivos/github.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="containerAboutMe">
+            <div class="aboutMe">
+              <p class="mainAboutMe">Sobre Mim</p>
+              <p>
+                Meu nome é Mateus Sanches e sou um apaixonado por tecnologia e
+                por melhorar a qualidade de vida das pessoas. Possuo experiência
+                em Desenvolvimento Back End.
+                <br />
+                <br />
+                Trabalhei com um ERP chamado Sage X3 de ponta a ponta do negócio
+                do cliente que tinha como foco empresas grandes e medias,
+                utilizei as seguintes linguagens e ferramentas: Adonix, MySql,
+                Web Service SOAP e Crystal Reports e meu último projeto foi
+                feito em Node para integrar dentro do ERP a criação de boletos
+                referente a Borderôs com QRcode bancário.
+                <br />
+                Enquanto estudo tento me tornar a pessoa com o qual eu gostaria
+                de ser, que quando o time estiver tendo algum problema eles
+                possam contar comigo para solucionar. Atualmente estou focando
+                nas tecnologias do mercado para uma nova oportunidade.
+              </p>
+              <p>
+                Hoje já entendo tecnologias como Python, Node, Mysql, HTML, CSS,
+                JavaScript, Bootstrap, Git.
+              </p>
+            </div>
+            <div class="buttonResume">
+              <a href="Arquivos/Curriculo-Mateus.pdf" download>
+                <div class="buttonResumeEstilo">
+                  <img src="Arquivos/nuvem.png" alt="" />
+                  <p>Currículo</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- sobre min -->
+        </section>
+
+        <!-- Projetos -->
+        <div class="projectMain" id="projects">
+          <h3 class="h3Projects">PROJETOS</h3>
+        </div>
+        <div class="mainSectionPorject row justify-content-center">
+          <section class="sectionProjects">
+            <div class="project">
+              <h1>Calculadora JS</h1>
+              <p>
+                Projeto feito com base em um desafio do curso da OneBitCode,
+                sendo ele desenvolver uma calculadora que consegue fazer as
+                quarto operacoes (+, -, *, /) e tambem calcular resto
+              </p>
+              <p>Tecnologias usadas no projeto: HTML, CSS e JS.</p>
+              <div class="links">
+                <div class="siteLinks">
+                  <a
+                    href="https://mateussanchesrodriguez.github.io/Calculadora-Basica-JS/"
+                    target="_blank"
+                  >
+                    <img
+                      src="Arquivos/web-browser.png"
+                      alt="site do projeto"
+                      class="siteLinks"
+                    />
+                  </a>
+                </div>
+                <div class="githubLinks">
+                  <a
+                    href="https://github.com/MateusSanchesRodriguez/Calculadora-Basica-JS"
+                    target="_blank"
+                  >
+                    <img
+                      src="Arquivos/github_black.png"
+                      alt="github"
+                      class="githubLinks"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project">
+              <h1>Jogo da Velha</h1>
+              <p>
+                Projeto feito para melhorar minhas habilidades com HTML, CSS e
+                JS, sendo parte do projeto desenvolver um jogo da velha entre
+                dois jogadores
+              </p>
+              <p>Tecnologias usadas no projeto: HTML, CSS e JS.</p>
+              <div class="links">
+                <div class="siteLinks">
+                  <a
+                    href="https://mateussanchesrodriguez.github.io/Jogo-da-Velha/"
+                    target="_blank"
+                  >
+                    <img
+                      src="Arquivos/web-browser.png"
+                      alt="site do projeto"
+                      class="siteLinks"
+                    />
+                  </a>
+                </div>
+
+                <div class="githubLinks">
+                  <a
+                    href="https://github.com/MateusSanchesRodriguez/Jogo-da-Velha"
+                    target="_blank"
+                  >
+                    <img
+                      src="Arquivos/github_black.png"
+                      alt="github"
+                      class="githubLinks"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project">
+              <h1>Highlighting and Auto Complete para Sage X3</h1>
+              <p>
+                Projeto feito para ter um Highlighting e um Auto Complete para o
+                ERP da Sage, era um projeto pessoal feito por um colega de
+                trabalho e eu resolvi terminá-lo e adicionar o auto complete
+              </p>
+              <p>
+                Tecnologias usadas no projeto: nenhuma em especial apenas
+                conhecimento em JSON.
+              </p>
+              <div class="links">
+                <div class="githubLinks">
+                  <a
+                    href="https://github.com/MateusSanchesRodriguez/Sagex3-Syntax-Highlight-and-Auto-Complete"
+                    target="_blank"
+                  >
+                    <img
+                      src="Arquivos/github_black.png"
+                      alt="github"
+                      class="githubLinks"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Projetos -->
+          </section>
+        </div>
+
+        <footer class="footer">
+          <div class="footer-conteiner">
+            <div class="footerContact">
+              E-mail para contato:
+              <span>mateussanchesrodriguez@gmail.com</span>
+              <br />
+              Feito por
+              <a
+                href="https://www.linkedin.com/in/mateus-rodriguez/"
+                target="_blank"
+              >
+                <span>Mateus Sanches</span>
+              </a>
+            </div>
+            <div id="img" data-dis-type="simultaneous" class="icons">
+              <div class="gifFooter">
+                <img
+                  src="Arquivos/pepe-hack-hack.gif"
+                  alt="pepe"
+                  class="pepe"
+                />
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
